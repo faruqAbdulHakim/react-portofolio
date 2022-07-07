@@ -16,15 +16,16 @@ function CV() {
         <TabHeader text1="CV" text2="Download my CV" />
       </div>
       <div className="mt-16 flex justify-center items-center">
-        <button
+        <a
           ref={buttonRef}
           className="bg-stone-800 text-white px-4 py-2 rounded-md mt-4 font-mono
           opacity-0 hover:bg-stone-700 active:bg-stone-600 transition-all"
-          type="button"
+          href="/assets/CV_Faruq Abdul Hakim.pdf"
+          download
           title="Click to start download CV"
         >
           Download CV
-        </button>
+        </a>
       </div>
     </div>
   );

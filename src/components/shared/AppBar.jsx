@@ -10,7 +10,7 @@ function AppBar({ tab, onTabChange }) {
         absolute sm:sticky top-9 sm:top-0 right-6 sm:right-0
         flex flex-col sm:flex-row sm:items-center sm:justify-center 
         gap-4 lg:gap-6 font-mono scale-0 sm:scale-100 origin-top-right
-        transition-all ${isOpen && 'scale-100'}`}
+        transition-all z-10 ${isOpen && 'scale-100'}`}
       >
         <TabButton onClick={onTabChange} tab={tab} changeTo="Home" />
         <TabButton onClick={onTabChange} tab={tab} changeTo="Skills" />
