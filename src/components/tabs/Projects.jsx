@@ -2,37 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import TabHeader from '../shared/TabHeader';
-
-const projects = [
-  {
-    title: 'Space Tourism',
-    imgSrc: '/assets/projects/space-tourism.png',
-    desc: 'Solusi dari challange yang disediakan oleh situs frontendmentor.io. Individu',
-    techs: 'React.js, TailwindCSS, GSAP',
-    url: 'https://react-space-tourism-peach.vercel.app/',
-  },
-  {
-    title: 'Website Danaindoagri',
-    imgSrc: '/assets/projects/danaindoagri.png',
-    desc: 'Dikerjakan untuk memenuhi tugas mata kuliah Pengembangan Perangkat Lunak. Terdapat berbagai CRUD data disertai dengan fitur autentikasi dan otorisasi. Berkolaborasi dalam sebuah tim yang terdiri atas Project Manager, System Analyst, Desainer, Programmer, dan Tester',
-    techs: 'Next.js, TailwindCSS, Supabase, FramerMotion',
-    url: 'https://danaindoagri-website-dev.vercel.app/',
-  },
-  {
-    title: 'Jokes Generator',
-    imgSrc: '/assets/projects/jokes-generator.png',
-    desc: 'Sebuah situs yang menampilkan berbagai lelucon dengan cara fetch ke public API. Individu',
-    techs: 'React.js, Styled-Components',
-    url: 'https://jokes-generator-512097.netlify.app/',
-  },
-  {
-    title: 'Postgre',
-    imgSrc: '/assets/projects/postgre.png',
-    desc: 'Situs untuk melakukan pendaftaran sebuah event webinar. Berkolaborasi dalam sebuah tim yang terdiri atas Project Manager, UI/UX Desainer, FrontEnd Dev, dan BackEnd Dev',
-    techs: 'Next.js, TailwindCSS',
-    url: 'https://postgre.pemro.id/',
-  },
-];
+import { projectData as projects } from '../../utils';
 
 function Projects() {
   return (
@@ -86,7 +56,7 @@ function ProjectCard({ title, imgSrc, desc, techs, url }) {
         <img
           src={imgSrc}
           alt={title}
-          className="w-full md:w-56 h-40 sm:h-64 md:h-full object-cover object-center"
+          className="w-full md:w-56 h-40 sm:h-64 md:h-48 object-cover object-center"
         />
       </div>
       <div className="p-2 flex-1">
